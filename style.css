@@ -1,0 +1,292 @@
+html,
+body {
+    margin: 0px;
+    height: 100%;
+    overflow-x: hidden;
+    background-color: black;
+}
+
+
+/*
+Configurações do Header
+*/
+
+header {
+    background-color: #ce0059;
+}
+
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav li {
+    display: inline-block;
+    margin-left: 60px;
+    padding-top: 16px;
+    position: relative;
+}
+
+nav ul>li>a {
+    color: #3396ff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-family: 'Alata', sans-serif;
+}
+
+nav ul>li>a:hover {
+    color: #000;
+    transition: all ease-in-out 260ms;
+}
+
+nav ul>li>a::before {
+    content: '';
+    display: block;
+    height: 5px;
+    width: 0%;
+    background-color: #000;
+    position: absolute;
+    top: 0;
+    transition: all ease-in-out 260ms;
+}
+
+nav ul>li>a:hover::before {
+    width: 100%;
+}
+
+
+/*
+classes
+*/
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+#nav1 {
+    float: right;
+}
+
+.logo {
+    float: left;
+    padding: 5px 0;
+}
+
+
+/*
+imagens de fundo do index
+*/
+
+.plx-image1 {
+    background-image: url(images/unnamed_38_1.gif);
+    background-color: black;
+    text-align: left;
+    width: 100%;
+    height: 900px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.plx-img2 {
+    background-image: url(images/fundo01.png);
+    width: 100%;
+    height: 800px;
+    text-align: right;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+/*
+do 1 ao 2: index
+do 3 ao x: galeria
+*/
+
+.content01 {
+    height: auto;
+    width: 100%;
+    background-color: #E0E0CE;
+    text-align: center;
+}
+
+.content02 {
+    height: auto;
+    width: 100%;
+    text-align: center;
+    background-color: #E0E0CE;
+}
+
+.content03 {
+    height: auto;
+    width: 100%;
+    text-align: left;
+    background-color: #201b21;
+}
+
+.content04 {
+    height: auto;
+    width: 100%;
+    text-align: right;
+    background-color: #402046;
+}
+
+.quebracontent {
+    height: 80px;
+    width: 100%;
+    background-color: black;
+}
+
+
+/*
+text 1 ao 7: index
+text 8 ao x: galeria
+*/
+
+.text01 {
+    font-size: 100px;
+    padding-top: 200px;
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+}
+
+.text02 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    animation: cor 1s infinite;
+}
+
+.text03 {
+    font-family: sans-serif;
+    font-size: 40px;
+    background-color: #E0E0CE;
+    padding-top: 50px;
+}
+
+.text04 {
+    width: 70%;
+    margin-left: 15%;
+    padding: 30px 0 80px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #E0E0CE;
+    letter-spacing: 3px;
+    line-height: 1.8em;
+}
+
+.text05 {
+    font-size: 80px;
+    padding-top: 200px;
+    color: rgb(255, 255, 255);
+    font-family: 'Press Start 2P', cursive;
+    padding-left: 15%;
+    padding-top: 40px;
+}
+
+.text06 {
+    font-size: 40px;
+    padding-top: 50px;
+    font-family: 'Press Start 2P', cursive;
+    animation: multicor 2s infinite;
+}
+
+.text07 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: 80px 0 80px 0;
+    font-size: 100px;
+}
+
+.text08 {
+    font-size: 20px;
+    padding-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: blanchedalmond;
+    padding-left: 20px;
+}
+
+.text09 {
+    font-size: 20px;
+    text-align: right;
+    padding-top: 10px;
+    font-family: 'Press Start 2P', cursive;
+    color: blanchedalmond;
+    padding-right: 20px;
+}
+
+
+/*
+ordenação da galeria
+*/
+
+.gallery img {
+    width: 260px;
+    height: 240px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.gallery2 img {
+    width: 300px;
+    height: 240px;
+    object-fit: cover;
+    padding: 5px;
+}
+
+.responsive1 {
+    padding: 0 6px;
+    width: 10%;
+    float: left;
+}
+
+.responsive2 {
+    padding: 0 6px;
+    float: right;
+    width: 25%;
+}
+
+
+/*
+Animações
+*/
+
+@keyframes cor {
+    0% {
+        color: #E0E0CE;
+    }
+    50% {
+        color: darkslategrey;
+    }
+    100% {
+        color: #E0E0CE;
+    }
+}
+
+@keyframes multicor {
+    0% {
+        color: ghostwhite;
+    }
+    25% {
+        color: hotpink;
+    }
+    50% {
+        color: khaki;
+    }
+    75% {
+        color: mediumpurple;
+    }
+    100% {
+        color: ghostwhite;
+    }
+}
