@@ -11,11 +11,19 @@ body {
 Configurações do Header
 */
 
-header {
+.header {
     background-color: #ce0059;
+    position: fixed;
+    width: 100%;
 }
 
-header::after {
+.header.active {
+    background-color: #ffffff;
+    position: fixed;
+    width: 100%;
+}
+
+.header::after {
     content: '';
     display: table;
     clear: both;
@@ -35,7 +43,7 @@ nav li {
 }
 
 nav ul>li>a {
-    color: #3396ff;
+    color: #f7f3ba;
     text-decoration: none;
     text-transform: uppercase;
     font-family: 'Alata', sans-serif;
@@ -86,7 +94,7 @@ imagens de fundo do index
 */
 
 .plx-image1 {
-    background-image: url(images/unnamed_38_1.gif);
+    background-image: url(images/fundo02.png);
     background-color: black;
     text-align: left;
     width: 100%;
@@ -98,7 +106,7 @@ imagens de fundo do index
 }
 
 .plx-img2 {
-    background-image: url(images/fundo01.png);
+    background-image: url(images/unnamed_38_1.gif);
     width: 100%;
     height: 800px;
     text-align: right;
@@ -108,10 +116,20 @@ imagens de fundo do index
     background-size: cover;
 }
 
+.imgright {
+    float: left;
+    margin-top: 10%;
+    margin-left: 5%;
+    border-radius: 50%;
+    width: 150px;
+    height: 300;
+    background-size: cover;
+}
+
 
 /*
 do 1 ao 2: index
-do 3 ao x: galeria
+do 3 ao 4: galeria
 */
 
 .content01 {
@@ -151,7 +169,7 @@ do 3 ao x: galeria
 
 /*
 text 1 ao 7: index
-text 8 ao x: galeria
+text 8 ao 9: galeria
 */
 
 .text01 {
@@ -177,13 +195,14 @@ text 8 ao x: galeria
 
 .text04 {
     width: 70%;
-    margin-left: 15%;
+    margin-left: 20%;
     padding: 30px 0 80px 0;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 20px;
     background-color: #E0E0CE;
     letter-spacing: 3px;
     line-height: 1.8em;
+    text-align: justify;
 }
 
 .text05 {
@@ -192,7 +211,7 @@ text 8 ao x: galeria
     color: rgb(255, 255, 255);
     font-family: 'Press Start 2P', cursive;
     padding-left: 15%;
-    padding-top: 40px;
+    padding-top: 120px;
 }
 
 .text06 {
@@ -223,6 +242,18 @@ text 8 ao x: galeria
     font-family: 'Press Start 2P', cursive;
     color: blanchedalmond;
     padding-right: 20px;
+}
+
+.text10 {
+    width: 70%;
+    margin-left: 15%;
+    padding: 30px 0 80px 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;
+    background-color: #E0E0CE;
+    letter-spacing: 3px;
+    line-height: 1.8em;
+    text-align: justify;
 }
 
 
