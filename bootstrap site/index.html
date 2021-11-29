@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Link para pegar o estilo do css do bootstrap-->
+    <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <title>Site bootstrap</title>
+</head>
+
+<body>
+    <!--menu-->
+    <nav class="navbar fixed-top navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Site bootstrap</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item active">
+                    <a class="nav-link text-success" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-expanded="false">
+                Dropdown
+              </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+
+        </div>
+    </nav>
+    <!--/menu-->
+
+    <!--papel de parede fixo-->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md bg-image">
+            </div>
+        </div>
+    </div>
+    <!--/papel de parede-->
+
+    <!--primeiro conteúdo-->
+    <div class="container bg-light">
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-8">
+                <h1>Bem vinde!</h1>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cumque, eveniet quo qui quidem dolores suscipit provident alias tenetur pariatur illo, quia eos unde praesentium id! Est quo temporibus possimus earum?</p>
+            </div>
+            <div class="col-md-4">
+                <h4>Mais informações</h4>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis aperiam pariatur cupiditate enim, architecto id veritatis placeat. Dignissimos accusantium suscipit libero numquam! Fuga, ea impedit in numquam cum obcaecati quae.</p>
+            </div>
+        </div>
+    </div>
+    <!--/conteúdo-->
+
+    <!--conteúdo com carrossel-->
+    <div class="container">
+        <div class="row mt-5 d-flex justify-content-start">
+            <div class="col-md-4">
+                <!--carrossel-->
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="10000">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoEeGwM2w2cCLzY8Zi5r_k7Kto0sFvl5JBOw&usqp=CAU" class="d-block w-100 h-75" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTlHruy7QWhRHpYUKjsebO7wp-JUUFHopkzCA&usqp=CAU" class="d-block w-100 h-75" alt="...">
+                        </div>
+                        <div class="carousel-item" data-interval="10000">
+                            <img src="https://img.r7.com/images/300-gatos-apartamento-toronto-06052019164906056" class="d-block w-100" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-target="#carouselExampleInterval" data-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-target="#carouselExampleInterval" data-slide="next">
+                      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="sr-only">Next</span>
+                    </button>
+                </div>
+                <!--/carrosel-->
+            </div>
+            <div class="col-md-8">
+                <h1>Imagens de gatos</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, saepe! Tenetur veritatis itaque inventore, commodi vero soluta, asperiores laborum tempore animi impedit minima est? Omnis soluta repellendus exercitationem dolores quae.</p>
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Pariatur tempora nesciunt exercitationem magni nisi ab iste sequi obcaecati eos cumque, aliquam iure doloribus veritatis, similique voluptas laboriosam ex? Maxime, est?</p>
+            </div>
+        </div>
+    </div>
+    <!--/conteúdo carrossel-->
+
+    <!--container com video-->
+    <div class="container">
+        <div class="row mt-5 d-flex">
+            <div class="col md-6">
+                <h1>texto</h1>
+                <p class="text-justify">Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis dolor eos et similique officiis quam maiores autem aspernatur iusto error sequi vitae, expedita id, cumque corporis minus illum dicta doloribus.</p>
+            </div>
+            <div class="col m-md-auto">
+                <h1>mais texto</h1>
+                <p class="text-justify">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Veritatis quaerat provident deleniti dolorum in, facere nobis velit labore tempore vitae omnis harum distinctio culpa ipsam sequi consequuntur. Enim, veniam et.</p>
+            </div>
+            <div class="col md-4">
+                <iframe width="100%" height="100%" src="https://www.youtube.com/embed/a3ICNMQW7Ok" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+    <!--/container video-->
+
+    <!--jumbotron-->
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+    </div>
+    <!--/jumbotron-->
+
+
+    <!--container com card-->
+    <div class="container">
+        <div class="row mt-4 d-flex">
+            <div class="col-md-4">
+                <!--card01-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://www.usnews.com/dims4/USNEWS/f2f85d4/2147483647/crop/2120x1391%2B0%2B0/resize/640x420/quality/85/?url=http%3A%2F%2Fmedia.beam.usnews.com%2F22%2Fc8%2F18f764aa418f9248a8e76369e3fb%2F200720-materialsengineer-stock.jpg" class="card-img-top"
+                        alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <!--/card01-->
+            </div>
+            <div class="col-md-4">
+                <!--card02-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://i0.wp.com/atlassianblog.wpengine.com/wp-content/uploads/2019/05/the-importance-of-teamwork_featured@3x.png?fit=2048%2C998&ssl=1" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                    </div>
+                </div>
+                <!--card02-->
+            </div>
+            <div class="col-md-4">
+                <!--card03-->
+                <div class="card" style="width: 18rem;">
+                    <img src="https://igd-wp-uploads-pluginaws.s3.amazonaws.com/wp-content/uploads/2018/08/29143635/como-fazer-um-feedback-eficiente-para-equipe.png" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <!--/card03-->
+            </div>
+        </div>
+    </div>
+    <!--/container com card-->
+
+    <!--papel de parede fixo-->
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-md bg-image">
+            </div>
+        </div>
+    </div>
+    <!--/papel de parede-->
+
+    <!--footer com redes sociais-->
+    <footer>
+        <div class="container-fluid mt-5">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <h1>Nossos contatos</h1>
+                </div>
+            </div>
+            <div class="row mt-5">
+
+                <div class="col-md-6">
+                    <h4>
+                        Deixe aqui o seu feedback!
+                    </h4>
+
+                    nome:<input id="nome" class="form-control form-control-sm" type="text" placeholder="Nome"> email:
+                    <input id="email" class="form-control form-control-sm" type="text" placeholder="example@mail.com">
+                    <div class="form-group">
+                        <label for="exampleFormControlTextarea1">comentário:</label>
+                        <textarea id="conteudo" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        <button type="button" class="btn btn-outline-dark">Enviar</button>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14701.48863853851!2d-47.2010475!3d-22.8996401!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xb530b0fa4224b623!2sIBM%20Brasil%20-%20Hortol%C3%A2ndia!5e0!3m2!1sen!2sbr!4v1638148231335!5m2!1sen!2sbr"
+                        width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="text-center">
+            <a href="https://www.facebook.com/"><img src="images/face.png" class="rounded tm-social" alt="..."></a>
+            <a href="https://www.twitter.com/"><img src="images/twitter.png" class="rounded tm-social" alt="..."></a>
+            <a href="https://www.linkedin.com/"><img src="images/linkedin.png" class="rounded tm-social" alt="..."></a>
+            <a href="https://www.instagram.com/"><img src="images/insta.png" class="rounded tm-social" alt="..."></a>
+            <p>DanielDezena. Todos os direitos reservados</p>
+
+        </div>
+
+    </footer>
+
+
+
+
+
+
+
+
+
+
+
+    <script src="script/script.js"></script>
+
+    <!--Scripts do próprio bootstrap-->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.min.js" integrity="sha384-VHvPCCyXqtD5DqJeNxl2dtTyhF78xXNXdkwX1CZeRusQfRKp+tA7hAShOK/B/fQ2" crossorigin="anonymous"></script>
+</body>
+
+</html>
