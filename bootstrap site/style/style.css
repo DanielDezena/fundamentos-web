@@ -1,0 +1,11 @@
+.bg-image {
+    background-image: url("https://images.wallpapersden.com/image/download/landscape-pixel-art_bGhnaGeUmZqaraWkpJRmbmdlrWZlbWU.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    height: 50vh;
+}
+
+.tm-social {
+    width: 50px;
+    height: 50px;
+}
